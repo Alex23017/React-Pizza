@@ -1,0 +1,17 @@
+.container-full-pizza {
+    display: flex;
+    gap: 10px;
+}
+
+.container-column_1 {
+    text-align: center;
+}
+
+
+.container-title h4{
+    margin-top: 10px;
+}
+
+.container-column_2 h2 {
+    margin-bottom: 20px;
+}
