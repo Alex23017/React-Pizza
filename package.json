@@ -1,4 +1,5 @@
 {
+  "homepage": "https://Alex23017.github.io/React-Pizza",
   "name": "pizza",
   "version": "0.1.0",
   "private": true,
@@ -15,6 +16,7 @@
     "ahooks": "^3.8.5",
     "axios": "^1.10.0",
     "clsx": "^2.1.1",
+    "gh-pages": "^6.3.0",
     "react": "^19.1.0",
     "react-content-loader": "^7.0.2",
     "react-dom": "^19.1.0",
@@ -23,14 +25,15 @@
     "react-router-dom": "^7.6.2",
     "react-scripts": "5.0.1",
     "sass": "^1.89.1",
-    "typescript": "^5.8.3",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -49,5 +52,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "typescript": "^4.9.5"
   }
 }
