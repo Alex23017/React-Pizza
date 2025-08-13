@@ -1,8 +1,6 @@
 import { createSlice, createAsyncThunk, PayloadAction } from "@reduxjs/toolkit";
 import Axios from "axios";
-import { act } from "react";
-import { CartItem } from "./cartSlice";
-import { Sort } from "./filterSlice";
+
 
 export const fetchPizzas = createAsyncThunk<Pizza[], SearchPizzaParams>(
   "pizza/fetchPizzasStatus",

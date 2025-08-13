@@ -3,10 +3,8 @@ import logoSvg from "../assets/img/pizza-logo.svg";
 import Search from "./Search";
 import { useSelector } from "react-redux";
 import { selectCart } from "../redux/slices/cartSlice";
-import { log } from "node:console";
 import { useEffect, useRef } from "react";
-import { useDispatch } from "react-redux";
-import { addItem } from "../redux/slices/cartSlice";
+
 
 const Header: React.FC = () => {
   const { items, totalPrice } = useSelector(selectCart);
@@ -22,9 +20,6 @@ const Header: React.FC = () => {
     }
     isMounted.current = true
   }, [items]);
-
-
-
   
 
   return (

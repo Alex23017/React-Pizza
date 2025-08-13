@@ -1,15 +1,11 @@
 import React, { useRef } from "react";
 import qs from "qs";
 import { list } from "../components/Sort";
-import { useEffect} from "react";
+import { useEffect } from "react";
 
-import { useSelector} from "react-redux";
-import {
-  setCategoryId,
-  setCurrentPage,
-  setFilters,
-} from "../redux/slices/filterSlice";
-import { Link, useNavigate } from "react-router-dom";
+import { useSelector } from "react-redux";
+import { setCategoryId, setCurrentPage, setFilters } from "../redux/slices/filterSlice";
+import { useNavigate } from "react-router-dom";
 
 import Categories from "../components/Categories";
 import Sort from "../components/Sort";
@@ -27,7 +23,7 @@ const Home: React.FC = () => {
   const { categoryId, sort, currentPage, searchValue } = useSelector(selectFilter);
 
   const isSearch = React.useRef(false);
-const isMounted = useRef(false);
+  const isMounted = useRef(false);
 
   const onChangePage = (number: number) => {
     dispatch(setCurrentPage(number));
