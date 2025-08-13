@@ -1,4 +1,10 @@
 .root {
+
+ @media (max-width: 600px) {
+  display: flex;
+ 
+ }
+
   li {
     display: inline-block;
     text-align: center;
@@ -24,15 +30,13 @@
         color: white;
       }
     }
-
- 
   }
   :global(.selected) {
-  background-color: #d86f1f;
+    background-color: #d86f1f;
 
-  a {
-    color: white;
+    a {
+      color: white;
+    }
   }
 }
 
-}
